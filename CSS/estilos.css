@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f39f86;
+  background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+  background-color: #f39f86;
+  background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto) [2];
+  grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (auto) [5];
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "logo logo" "titulo titulo" "botones botones" "main main" "footer footer";
+}
+
+header .logo {
+  width: 1320px;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: logo;
+}
+
+header .titulo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulo;
+}
+
+header h1 {
+  font-family: "DM Serif Display", serif;
+  color: #ff0000;
+  text-align: center;
+}
+
+header .botones {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: botones;
+}
+
+header nav {
+  padding: 1rem;
+}
+
+header nav ul {
+  list-style: none;
+  background-color: #2067ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+header nav ul a {
+  color: #faebd7;
+  text-decoration: none;
+  padding: 0.7rem;
+  display: block;
+}
+
+header nav ul a:hover {
+  background-color: #faebd7;
+  color: #2067ff;
+  font-weight: bold;
+}
+
+main {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .carousel {
+  height: auto;
+  width: 80%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+main .centrar {
+  margin: auto;
+  padding: 1rem;
+}
+
+main h2 {
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: center;
+}
+
+main .sect1 {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+main .productos {
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: center;
+}
+
+main form {
+  font-family: "Nanum Gothic", sans-serif;
+  text-align: left;
+}
+
+main .field {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .contenedor {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr) [6];
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas: "logo" "titulo" "botones" "botones" "main" "footer";
+  }
+}
+
+footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+}
+
+footer h6:hover {
+  color: blue;
+}
+/*# sourceMappingURL=estilos.css.map */

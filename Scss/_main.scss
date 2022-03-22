@@ -1,0 +1,42 @@
+main {
+  grid-area: main;
+  justify-content: center;
+  display: flex;
+  .carousel {
+    height: auto;
+    width: 80%;
+    object-fit: cover;
+  }
+  .centrar {
+    margin: auto;
+    padding: 1rem;
+  }
+  h2 {
+    font-family: "Nanum Gothic", sans-serif;
+    text-align: center;
+  }
+  .sect1 {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  .productos {
+    font-family: "Nanum Gothic", sans-serif;
+    text-align: center;
+  }
+  form {
+    font-family: "Nanum Gothic", sans-serif;
+    text-align: left;
+  }
+  .field {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas: "logo" "titulo" "botones" "botones" "main" "footer";
+  }
+}
